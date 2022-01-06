@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;500&display=swap');
+
+* {
+     margin: 0;
+     box-sizing: border-box;
+}
+
+html {
+     scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Mitr', sans-serif;
+    color: rgb(43, 42, 42);
+    background-color: rgba(178, 215, 247, 0.623);
+    color: rgb(83, 104, 146);
+}
+
+h3 {
+    padding: 1rem;
+    font-size: 1.2em;
+}
+
+h2 {
+    font-size: 3em;
+    color: #fff;
+    color: transparent;
+    -webkit-text-stroke: 2px rgb(83, 104, 146);
+    text-stroke: 2px #000;
+    text-shadow: none;
+    letter-spacing: 0.8em;
+}
+
+header, footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+    background-color: rgba(178, 215, 247, 0.623);
+}
+
+.logo {
+    transform: rotate(45deg);
+}
+
+.parallax {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.spring {
+    background-image: url(https://cdn.pixabay.com/photo/2017/04/10/15/04/spring-2218771_960_720.jpg);
+}
+.summer {
+    background-image: url(https://cdn.pixabay.com/photo/2018/07/03/22/15/sunflower-3514915_960_720.jpg);
+}
+.autumn {
+    background-image: url(https://cdn.pixabay.com/photo/2011/11/16/14/09/autumn-10484_960_720.jpg);
+}
+.winter {
+    background-image: url(https://cdn.pixabay.com/photo/2020/02/08/14/36/trees-4830285_960_720.jpg);
+}
+
+.content {
+    width: 70vw;
+    height: 50vh;
+    margin: 0 auto;
+    margin-top: -3rem;
+    padding: 1rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: rgb(252, 252, 252);
+    border: 1px solid rgb(231, 231, 231);
+    -webkit-box-shadow: -2px 3px 10px -3px rgba(0,0,0,0.69); 
+    box-shadow: 1px -2px 4px -4px rgba(0,0,0,0.69);
+}
+
+.content p {
+    text-align: center;
+}
+
+.txt-center {
+    width: 80%;
+    text-align: center;
+    font-weight: 200;
+}
+
+footer {
+    margin-top: 3rem;
+    padding: 1rem;
+    font-weight: 200;
+}
+
+/* responsive */
+@media only screen and (max-width: 900px) {
+    .content {
+         height: auto;
+    }
+
+    .parallax {
+        background-attachment: scroll;
+    }
+
+    h2 {
+        font-size: 2em;
+        font-weight: bold;
+    }
+}
