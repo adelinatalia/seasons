@@ -94,6 +94,10 @@ header, footer {
     font-weight: 200;
 }
 
+.content-img {
+    margin-top: 1rem;
+}
+
 footer {
     margin-top: 3rem;
     padding: 1rem;
@@ -103,7 +107,7 @@ footer {
 /* responsive */
 @media only screen and (max-width: 900px) {
     .content {
-         height: auto;
+        height: auto;
     }
 
     .parallax {
@@ -113,5 +117,17 @@ footer {
     h2 {
         font-size: 2em;
         font-weight: bold;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .content {
+        width: 95vw;
+        height: auto;
+        padding: 1rem 0.5rem;
+    }
+
+    .txt-center {
+        width: 95%;
     }
 }
